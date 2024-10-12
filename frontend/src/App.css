@@ -1,0 +1,21 @@
+/* Custom class to hide scrollbar but allow horizontal scroll */
+.suggest-users-container {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .suggest-users-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+ 
+.content-container {
+  overflow-y: scroll;
+  scrollbar-width: 0; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.content-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
