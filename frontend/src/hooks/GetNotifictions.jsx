@@ -10,7 +10,7 @@ function GetNotifictions() {
     useEffect(()=>{
         const fetshNotifictions= async()=>{
           try {
-            const {data}=await axios.get( "http://localhost:8000/api/v1/auth/notifictions",
+            const {data}=await axios.get( "https://instgram-clone-website.onrender.com/api/v1/auth/notifictions",
               {
                 withCredentials:true,
               })

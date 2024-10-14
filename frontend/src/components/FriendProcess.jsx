@@ -29,7 +29,7 @@ if(user._id && targetUserId ){
 
 const handleAddFriend=async ()=>{
   try {
-    const res= await axios.post(`http://localhost:8000/api/v1/friend/add`,{
+    const res= await axios.post(`https://instgram-clone-website.onrender.com/api/v1/friend/add`,{
           targetUserId
     },{
      withCredentials:true

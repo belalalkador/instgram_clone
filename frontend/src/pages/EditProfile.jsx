@@ -36,7 +36,7 @@ const EditProfile = () => {
       }
 
       const res = await axios.put(
-        `http://localhost:8000/api/v1/auth/profile/${user._id}`,
+        `https://instgram-clone-website.onrender.com/api/v1/auth/profile/${user._id}`,
         formData,
         {
           headers: {
@@ -64,7 +64,7 @@ const EditProfile = () => {
     if (confirmed) {
       try {
         await axios.delete(
-          `http://localhost:8000/api/v1/auth/profile/${user._id}`,
+          `https://instgram-clone-website.onrender.com/api/v1/auth/profile/${user._id}`,
           {
             withCredentials: true,
           }

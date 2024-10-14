@@ -27,7 +27,7 @@ const CreatePost = () => {
     }
 
        const res = await axios.post(
-      `http://localhost:8000/api/v1/post/create/${user._id}`,
+      `https://instgram-clone-website.onrender.com/api/v1/post/create/${user._id}`,
       formData,{
         withCredentials:true,
       }

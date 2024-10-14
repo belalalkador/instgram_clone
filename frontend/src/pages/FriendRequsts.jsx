@@ -8,7 +8,7 @@ function FriendRequsts() {
 useEffect(()=>{
     const fetshFriendRequests= async()=>{
 try {
-    const res = await axios.get(`http://localhost:8000/api/v1/friend/friend-requests`,{
+    const res = await axios.get(`https://instgram-clone-website.onrender.com/api/v1/friend/friend-requests`,{
         withCredentials:true
     })
     if(res.data.success){
@@ -25,7 +25,7 @@ try {
 const handleAcceptFriend = async (id) => {
   try {
     const res = await axios.post(
-      `http://localhost:8000/api/v1/friend/accept`,
+      `https://instgram-clone-website.onrender.com/api/v1/friend/accept`,
       { targetUserId: id },
       { withCredentials: true }
     );
@@ -46,7 +46,7 @@ const handleAcceptFriend = async (id) => {
 const handleRejectFriend = async (id) => {
   try {
     const res = await axios.post(
-      `http://localhost:8000/api/v1/friend/reject`,
+      `https://instgram-clone-website.onrender.com/api/v1/friend/reject`,
       { targetUserId: id },
       { withCredentials: true }
     );

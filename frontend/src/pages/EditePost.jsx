@@ -45,7 +45,7 @@ function EditPost() {
       }
 
       const res = await axios.put(
-        `http://localhost:8000/api/v1/post/edit/${selectPost._id}/${user._id}`,
+        `https://instgram-clone-website.onrender.com/api/v1/post/edit/${selectPost._id}/${user._id}`,
         formData,
         {
           withCredentials: true,

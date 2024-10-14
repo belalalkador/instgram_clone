@@ -79,7 +79,7 @@ function CommentsSection({
 
   const handleDeleteComment = async (commentId) => {
     try {
-      await axios.delete(`http://localhost:8000/api/v1/commint/${commentId}`, {
+      await axios.delete(`https://instgram-clone-website.onrender.com/api/v1/commint/${commentId}`, {
         withCredentials: true,
       });
     } catch (error) {
@@ -94,7 +94,7 @@ function CommentsSection({
 
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/commint/${postId}`,
+        `https://instgram-clone-website.onrender.com/api/v1/commint/${postId}`,
         {
           text: commintInput,
           postId,

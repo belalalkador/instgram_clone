@@ -8,7 +8,7 @@ const GetUserPosts = (id) => {
         const  fetchseggestUser =async ()=>{
           try {
               const res = await axios.get(
-                  `http://localhost:8000/api/v1/post/user/${id}`,
+                  `https://instgram-clone-website.onrender.com/api/v1/post/user/${id}`,
                   {
                     withCredentials:true,
                   }

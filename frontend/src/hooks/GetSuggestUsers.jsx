@@ -9,7 +9,7 @@ function GetSuggestUsers() {
         const  fetchseggestUser =async ()=>{
           try {
               const res = await axios.get(
-                  "http://localhost:8000/api/v1/auth/suggest-users",
+                  "https://instgram-clone-website.onrender.com/api/v1/auth/suggest-users",
                   {
                     withCredentials:true,
                   }

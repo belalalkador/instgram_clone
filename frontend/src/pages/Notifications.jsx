@@ -12,7 +12,7 @@ function Notifications() {
   const markNotificationRead = async (id) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:8000/api/v1/auth/notifiction/${id}`, 
+        `https://instgram-clone-website.onrender.com/api/v1/auth/notifiction/${id}`, 
         {},
         { withCredentials: true }
       );
@@ -35,7 +35,7 @@ function Notifications() {
 
 const deleteNotification= async (id)=>{
   try {
-    const {data}= await axios.delete(`http://localhost:8000/api/v1/auth/notifiction/${id}`,{
+    const {data}= await axios.delete(`https://instgram-clone-website.onrender.com/api/v1/auth/notifiction/${id}`,{
       withCredentials:true,
     })
   if(data.success){

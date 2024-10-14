@@ -8,7 +8,7 @@ const GetUserBookmarks = (id) => {
     const fetchUserBookmarks = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/auth/bookmarks/${id}`,
+          `https://instgram-clone-website.onrender.com/api/v1/auth/bookmarks/${id}`,
           {
             withCredentials: true,
           }

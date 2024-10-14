@@ -10,7 +10,7 @@ const UserFriend = () => {
     const fetchFriends = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8000/api/v1/friend/get-friends`,
+          `https://instgram-clone-website.onrender.com/api/v1/friend/get-friends`,
           { withCredentials: true }
         );
         if (data.success) {
@@ -30,7 +30,7 @@ const UserFriend = () => {
   const handleUnfriend = async (friendId) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:8000/api/v1/friend/unfriend`,
+        `https://instgram-clone-website.onrender.com/api/v1/friend/unfriend`,
         { targetUserId: friendId },
         { withCredentials: true }
       );

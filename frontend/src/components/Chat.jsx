@@ -21,7 +21,7 @@ function Chat() {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8000/api/v1/message/${userId}`,
+          `https://instgram-clone-website.onrender.com/api/v1/message/${userId}`,
           { withCredentials: true }
         );
         if (data.success) {
@@ -60,7 +60,7 @@ function Chat() {
     if (!newMessage.trim()) return;
     try {
       const { data } = await axios.post(
-        `http://localhost:8000/api/v1/message/${userId}`,
+        `https://instgram-clone-website.onrender.com/api/v1/message/${userId}`,
         { message: newMessage },
         { withCredentials: true }
       );
@@ -80,7 +80,7 @@ function Chat() {
 
     try {
       const { data } = await axios.delete(
-        `http://localhost:8000/api/v1/message/${userId}`,
+        `https://instgram-clone-website.onrender.com/api/v1/message/${userId}`,
         { withCredentials: true }
       );
       if (data.success) {

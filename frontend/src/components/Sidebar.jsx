@@ -1,7 +1,6 @@
 import {
   FaHome,
   FaSearch,
-  FaCompass,
   FaEnvelope,
   FaBell,
   FaPlus,
@@ -31,7 +30,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/v1/auth/signout", {
+      const res = await axios.get("https://instgram-clone-website.onrender.com/api/v1/auth/signout", {
         withCredentials: true,
       });
       if (res.data.success) {

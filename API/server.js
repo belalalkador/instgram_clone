@@ -23,7 +23,6 @@ app.use(
     credentials: true,
   })
 );
-
 // API Routes
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/post', postRoute);

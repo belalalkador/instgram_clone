@@ -18,7 +18,7 @@ const Search = () => {
     try {
  
       const response = await axios.get(
-        `http://localhost:8000/api/v1/post/search?search=${search}`,{
+        `https://instgram-clone-website.onrender.com/api/v1/post/search?search=${search}`,{
             withCredentials:true,
         }
       );

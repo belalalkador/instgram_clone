@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import io from "socket.io-client";
 import { setSocketCon, disconnectSocket } from "../redux/socket";
 
-const socketUrl = "http://localhost:8000"; 
+const socketUrl = "https://instgram-clone-website.onrender.com"; 
 
 const GetSocketCon = () => {
   const dispatch = useDispatch();

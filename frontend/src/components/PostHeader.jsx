@@ -88,7 +88,7 @@ const PostHeader = ({ post }) => {
   // Handle Share button
   const handleShare =async () => {
     try{
-      const postUrl = `http://localhost:5173/single/${post._id}`;
+      const postUrl = `https://instgram-clone-website.onrender.com/single/${post._id}`;
         await navigator.clipboard.writeText(postUrl); // Copy the link to the clipboard
         alert("Profile link copied to clipboard!"); // Optional feedback to user
       } catch (err) {
@@ -100,7 +100,7 @@ const PostHeader = ({ post }) => {
   const handleDelete = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/api/v1/post/${post._id}/${user._id}`,
+        `https://instgram-clone-website.onrender.com/api/v1/post/${post._id}/${user._id}`,
         {
           withCredentials: true,
         }
@@ -124,7 +124,7 @@ const PostHeader = ({ post }) => {
         return;
       }
       const res = await axios.post(
-        "http://localhost:8000/api/v1/auth/follow-process",
+        "https://instgram-clone-website.onrender.com/api/v1/auth/follow-process",
         {
           targetUserId: post.author._id,
         },
