@@ -19,10 +19,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin:[process.env.CLIENT_URL,"http://localhost:5173"],
     credentials: true,
   })
 );
+<<<<<<< HEAD
+=======
+console.log(process.env.CLIENT_URL);
+
+
+>>>>>>> 70748a7457d67e22d5808eb2b4fcfda588b40d70
 // API Routes
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/post', postRoute);

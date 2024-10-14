@@ -67,7 +67,11 @@ const SignUp = () => {
         }
 
         const res = await axios.post(
+<<<<<<< HEAD
           "https://instgram-clone-website.onrender.com/api/v1/auth/signup",
+=======
+          "https://instgram-clone-website.onrender.com//api/v1/auth/signup",
+>>>>>>> 70748a7457d67e22d5808eb2b4fcfda588b40d70
           formData
         );
 
