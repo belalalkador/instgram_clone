@@ -23,13 +23,7 @@ app.use(
     credentials: true,
   })
 );
-<<<<<<< HEAD
-=======
-console.log(process.env.CLIENT_URL);
 
-
->>>>>>> 70748a7457d67e22d5808eb2b4fcfda588b40d70
-// API Routes
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/post', postRoute);
 app.use('/api/v1/commint', commintRoute);
