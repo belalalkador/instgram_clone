@@ -147,7 +147,7 @@ function Chat() {
       </div>
 
       {/* Input Section */}
-      <div className="h-[50px] py-2 mt-[-80px] md:mt-0">
+      <div className="h-[50px] py-2 mt-[-50px] md:mt-0 ">
         <form
           className="px-2 flex justify-center items-center gap-2 py-2 left-0 md:left-[600px] bottom-[70px] md:bottom-0 right-0 text-white bg-gray-800"
           onSubmit={handleSendMessage}
