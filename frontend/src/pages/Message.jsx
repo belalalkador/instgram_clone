@@ -48,7 +48,7 @@ const Message = () => {
 
   return (
     <Layout>
-      <div className="h-[calc(100vh_-_50px)]  md:h-screen flex justify-between flex-col lg:flex-row ">
+      <div className="h-[calc(100vh_-_100px)]  md:h-screen flex justify-between flex-col lg:flex-row ">
         <div className="lg:basis-[25%] lg:h-screen bg-white/10 px-2 content-container">
           <div className="py-2 mx-auto my-2 flex justify-between z-30">
             <input
