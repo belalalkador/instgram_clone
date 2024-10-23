@@ -95,7 +95,7 @@ const Message = () => {
             )}
           </div>
         </div>
-        <div className={` ${open?"h-[calc(100vh_-_154px)] ":"h-[calc(100vh_-_60px)] "} lg:flex-1 lg:h-screen `}>
+        <div className={` ${open?"h-[calc(100vh_-_225px)] ":"h-[calc(100vh_-_120px)] "}  lg:flex-1 lg:h-screen `}>
           <Outlet />
         </div>
       </div>
